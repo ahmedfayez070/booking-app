@@ -1,0 +1,121 @@
+@import '../../App.scss';
+
+.hotels-list-item {
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-bottom: 20px;
+
+  .hotels-list-image {
+    width: 200px;
+    height: 200px;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .hotels-list-description {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 2;
+
+    .hotels-list-title {
+      font-size: 20px;
+      color: $primary-color;
+    }
+
+    .hotels-list-distance {
+      font-size: 12px;
+    }
+
+    .hotels-list-taxi-option {
+      font-size: 12px;
+      background-color: $green-color;
+      color: #fff;
+      width: fit-content;
+      padding: 5px;
+      border-radius: 5px;
+    }
+
+    .hotels-list-subtitle {
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .hotels-list-features {
+      font-size: 12px;
+    }
+
+    .hotels-list-cancel,
+    .hotels-list-cancel-option {
+      font-size: 14px;
+      font-weight: bold;
+      color: #008009;
+    }
+
+    .hotels-list-cancel-option {
+      font-weight: normal;
+    }
+  }
+
+  .hotels-list-extra {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .hotels-list-rate {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      span {
+        font-weight: 600;
+        color: #333;
+      }
+
+      button {
+        background-color: $primary-color;
+        color: #fff;
+        font-weight: 700;
+        border: none;
+        padding: 5px;
+        border-radius: 3px;
+      }
+    }
+
+    .hotels-list-price {
+      text-align: right;
+      display: flex;
+      flex-direction: column;
+
+      span {
+        margin-bottom: 5px;
+      }
+
+      .price {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 10px;
+      }
+
+      .option {
+        font-size: 12px;
+        color: #555;
+      }
+
+      button {
+        color: #fff;
+        background-color: $secondry-color;
+        border: none;
+        padding: 8px;
+        cursor: pointer;
+      }
+    }
+  }
+}

@@ -1,0 +1,34 @@
+@import '../../App.scss';
+
+.footer {
+  width: 100%;
+  max-width: 1024px;
+  font-size: 12px;
+
+  .footer-lists {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 50px;
+
+    .footer-list {
+      display: block;
+
+      .footer-list-item {
+        list-style: none;
+        padding: 0;
+        margin-bottom: 10px;
+        color: $primary-color;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .footer-copyright {
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+    color: #000;
+  }
+}

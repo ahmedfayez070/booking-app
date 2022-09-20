@@ -1,0 +1,40 @@
+@import '../../App.scss';
+
+.mail {
+  width: 100%;
+  padding: 50px 0;
+  margin-top: 50px;
+  max-width: 1024;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  background-color: $primary-color;
+
+  .mail-title {
+    margin-bottom: 20px;
+  }
+
+  .mail-description {
+    margin-bottom: 20px;
+  }
+
+  .mail-form {
+    input {
+      width: 300px;
+      padding: 10px;
+      border: none;
+      border-radius: 5px 0 0 5px;
+    }
+
+    button {
+      padding: 10px;
+      border: none;
+      background-color: $secondry-color;
+      color: #fff;
+      font-weight: 500;
+      cursor: pointer;
+      border-radius: 0 5px 5px 0;
+    }
+  }
+}

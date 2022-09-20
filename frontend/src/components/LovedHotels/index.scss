@@ -1,0 +1,48 @@
+@import '../../App.scss';
+
+.love-hotels {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+  max-width: 1024px;
+
+  .love-hotels-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    .love-hotels-img {
+      width: 100%;
+      object-fit: cover;
+      height: 150px;
+    }
+
+    .love-hotels-name {
+      font-weight: 700;
+    }
+
+    .love-hotels-city {
+      font-weight: 300;
+    }
+
+    .love-hotels-price {
+      font-weight: 500;
+    }
+
+    .love-hotels-rate {
+      button {
+        background-color: $primary-color;
+        color: #fff;
+        border: none;
+        padding: 5px;
+        margin-right: 10px;
+        font-weight: 700;
+      }
+
+      span {
+        font-size: 14px;
+      }
+    }
+  }
+}

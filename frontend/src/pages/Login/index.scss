@@ -1,0 +1,35 @@
+@import '../../App.scss';
+
+.login {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .login-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .login-input {
+      height: 30px;
+      padding: 10px;
+    }
+
+    .login-button {
+      border: none;
+      padding: 10px 20px;
+      background-color: #0071c2;
+      background-color: $secondry-color;
+      color: #fff;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 5px;
+
+      &:disabled {
+        background-color: #0071c28c;
+        cursor: not-allowed;
+      }
+    }
+  }
+}

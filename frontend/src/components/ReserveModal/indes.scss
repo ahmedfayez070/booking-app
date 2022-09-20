@@ -1,0 +1,81 @@
+@import '../../App.scss';
+
+.reserve {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.418);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .reserve-container {
+    background-color: #fff;
+    padding: 20px;
+    position: relative;
+    min-width: 300px;
+
+    .reserve-close {
+      position: absolute;
+      top: 0;
+      right: 0;
+      cursor: pointer;
+    }
+
+    .room-item {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+      padding: 20px;
+
+      .room-item-info {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+      }
+
+      .room-title {
+        font-weight: 500;
+      }
+
+      .room-description {
+        font-weight: 300;
+      }
+
+      .room-max {
+        font-size: 12px;
+      }
+
+      .room-price {
+        font-weight: 500;
+      }
+
+      .room-select-rooms {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+        font-size: 8px;
+        color: gray;
+      }
+
+      .room {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    .room-button {
+      border: none;
+      padding: 10px 20px;
+      background-color: $secondry-color;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 5px;
+      width: 100%;
+      margin-top: 20px;
+    }
+  }
+}

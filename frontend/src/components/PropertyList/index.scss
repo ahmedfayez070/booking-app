@@ -1,0 +1,35 @@
+@import '../../App.scss';
+
+.property-list {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1024px;
+  gap: 20px;
+
+  .property-list-item {
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 5px;
+    color: #000;
+    flex: 1;
+
+    .property-list-img {
+      width: 100%;
+      object-fit: cover;
+      height: 150px;
+    }
+
+    .property-list-title {
+      h3 {
+        font-size: 18px;
+        text-transform: capitalize;
+      }
+
+      h4 {
+        font-size: 16px;
+        font-weight: 300;
+      }
+    }
+  }
+}

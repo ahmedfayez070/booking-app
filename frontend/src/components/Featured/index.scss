@@ -1,0 +1,28 @@
+@import '../../App.scss';
+
+.featured {
+  width: 100%;
+  max-width: 1024px;
+  gap: 10px;
+  justify-content: space-between;
+  display: flex;
+
+  .featured-item {
+    overflow: hidden;
+    color: #fff;
+    position: relative;
+    border-radius: 5px;
+    height: 250px;
+
+    .featured-img {
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .featured-title {
+      position: absolute;
+      bottom: 60px;
+      left: 20px;
+    }
+  }
+}
